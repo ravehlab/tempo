@@ -49,8 +49,6 @@ class MSBD():
                  sbds,
                  sf,
                  s:int= 4.0,
-                 angle= (0.6,),
-                 norm= (2.2,)
                  ):
         '''
         MD BD constructor
@@ -61,8 +59,6 @@ class MSBD():
         self.sbds= sbds
         self.sf= sf
         self.set_s(s)
-        self.angle= angle
-        self.norm= norm
         # self.model=model
 
 
