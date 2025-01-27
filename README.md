@@ -22,4 +22,4 @@ conda install -n py39 seaborn
 
 # Example parameters for 5 or 10 balls run 
 - change the surrogate force function (can also use the same as the NPC)
--  go to the main of the python file and give the parameters e.g n=3, dt=0.2
+-  go to the main of the python file and give the parameters e.g n=3, dt=0.2 file_name ="TEST"
