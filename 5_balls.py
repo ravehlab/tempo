@@ -47,15 +47,16 @@ def test_bonded(dt, num_of_steps, n):
     pb = create_p(m)
     pc = create_p(m)
     pd = create_p(m)
-    ps0 = IMP.core.HarmonicDistancePairScore(7 - 3, k * 1.8)  # 7 cause the r of each is 1 plus 5 A 3.8 insted of 1.8
+    ps0 = IMP.core.HarmonicDistancePairScore(7 - 3, k * 1.8)  # 7 cause the r of each is 1 plus 5 A 3.8 instead of 1.8
     ps1 = IMP.core.SphereDistancePairScore(
-        IMP.core.TruncatedHarmonicUpperBound(10., k, 11))  # 10 cause the r of each is 1 plus 8 A 11 thesh fot the upper
+        IMP.core.TruncatedHarmonicUpperBound(10., k, 11))  # 10 cause the r of each is 1 plus 8 A 11 threshold for the upper
 
     pe = create_p(m)
-    ps2 = IMP.core.SphereDistancePairScore(IMP.core.TruncatedHarmonicUpperBound(8., k / 16,
-                                                                                10 + 3))  # 10 cause the r of each is 1 plus 8 A 11 thesh fot the upper
-    ps3 = IMP.core.HarmonicDistancePairScore(12, k / 16)  # 7 cause the r of each is 1 plus 5 A 3.8 insted of 1.8
-    ps4 = IMP.core.HarmonicDistancePairScore(17, k / 64)  # 7 cause the r of each is 1 plus 5 A 3.8 insted of 1.8
+    ps2 = IMP.core.SphereDistancePairScore(IMP.core.TruncatedHarmonicUpperBound(center = 8., 
+                                                                                k = k / 16,
+                                                                                threshold = 10 + 3))  # 10 cause the r of each is 1 plus 8 A 11 threshold for the upper
+    ps3 = IMP.core.HarmonicDistancePairScore(12, k / 16)  # 7 cause the r of each is 1 plus 5 A 3.8 instead of 1.8
+    ps4 = IMP.core.HarmonicDistancePairScore(17, k / 64)  # 7 cause the r of each is 1 plus 5 A 3.8 instead of 1.8
 
     r0 = IMP.core.PairRestraint(m, ps0, (pa, pb))
     r1 = IMP.core.PairRestraint(m, ps0, (pb, pc))
@@ -75,7 +76,7 @@ def test_bonded(dt, num_of_steps, n):
     r11 = IMP.core.PairRestraint(m, ps4, (pb, pc))
     r12 = IMP.core.PairRestraint(m, ps3, (pb, pc))
 
-    ps7 = IMP.core.HarmonicDistancePairScore(7 - 3, k * 18)  # 7 cause the r of each is 1 plus 5 A 3.8 insted of 1.8
+    ps7 = IMP.core.HarmonicDistancePairScore(7 - 3, k * 18)  # 7 cause the r of each is 1 plus 5 A 3.8 instead of 1.8
     r24 = IMP.core.PairRestraint(m, ps7, (pa, pb))
 
     #
