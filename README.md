@@ -7,7 +7,7 @@ conda create --name py39 "python=3.9" --channel conda-forge
 1) Basic scientific stack
 conda install -n py39 numpy matplotlib pandas
 
-conda install ambertools=22 compilers graph-tool imp
+conda install compilers graph-tool imp
 
 2) Jupyter
 conda install -n py39 -c conda jupyter
