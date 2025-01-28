@@ -18,7 +18,7 @@ conda install -n py39 seaborn
 
 
 # Example parameters for NPC run 
-NPC_MSBD.py --depth 0 --time_step 6000 --temperature 298.15 --pikle_file_name "NPC_data_half_v8/radius_v1_$SLURM_ARRAY_TASK_ID" --rmf_filename "NPC_data/test.rmf" --num_frames 60000
+NPC_MSBD.py --depth 0 --time_step 6000 --temperature 298.15 --pikle_file_name "test" --rmf_filename "test.rmf" --num_frames 60000
 
 # Example parameters for 5 or 10 balls run 
 - change the surrogate force function (can also use the same as the NPC)
