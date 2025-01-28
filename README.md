@@ -1,7 +1,7 @@
 # tempo
 The TEMPO (Temporally-multiscale prediction) integrator for accelerating molecular simulations
 
-Below is a summary of the main packages needed. Please take a look at the requirements or environment files for a more detailed list of dependencies (including version numbers).
+Below is a summary of the main packages needed. Please take a look at the requirements or environment files for a more detailed list of requirements.txt (including version numbers).
 
 
 conda create --name py39 "python=3.9" --channel conda-forge
