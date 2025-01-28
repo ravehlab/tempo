@@ -15,10 +15,10 @@ import numpy as np
 # import plots
 
 T = 298.15 # Kalvin
-k = 1.5 * 298.15 
-# time_in_p_sedc= 450000
-time_in_p_sedc = 1800000*10/18*10
-# time_in_p_sedc = 1800000*10/18*3
+k = 447.225 #const scale of string  
+# time_in_fs_sedc= 450000
+time_in_fs_sedc = 1800000*10/18*10
+# time_in_fs_sedc = 1800000*10/18*3
 
 import pickle
 
@@ -214,7 +214,7 @@ if __name__ == '__main__':
         for i in range(137,138):
                 n = 4
                 print(n, dt)
-                your_data_n5 = test_bonded(dt=dt, num_of_steps=int(time_in_p_sedc * (1 / dt) / 4 ** n),
+                your_data_n5 = test_bonded(dt=dt, num_of_steps=int(time_in_fs_sedc * (1 / dt) / 4 ** n),
                                         n=n)
                 # x_2_n5, taho_n5, estimate_auto_curelation_n5 = plots.get_taho_half(your_data_n5[0], n, 1, dt)
 
