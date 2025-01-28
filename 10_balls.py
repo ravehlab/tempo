@@ -14,7 +14,7 @@ from scipy.stats import ks_2samp
 import numpy as np
 
 T = 298.15 # Kalvin
-k = 1.5 * 298.15 
+k = 447.225
 # time_in_fs_sedc= 450000
 time_in_fs_sedc = 1800000*10/18*10*2
 # time_in_fs_sedc = 1
