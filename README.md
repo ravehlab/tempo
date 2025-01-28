@@ -24,6 +24,7 @@ NPC_MSBD.py --depth 0 --time_step 6000 --temperature 298.15 --pikle_file_name "t
 depth: Represents the recursion depth of the algorithm.
 time_step: Defines the fundamental time step for the simulation.
 num_frames: Specifies the total number of frames, which determines the total simulation time.
+
 For example, if num_frames = 60,000 and time_step = 6,000 fs, the simulation spans 23 microseconds.
 # Example parameters for 5 or 10 balls run 
 - change the surrogate force function (can also use the same as the NPC)
