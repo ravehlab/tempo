@@ -19,8 +19,10 @@ conda install -n py39 seaborn
 
 # Example parameters for NPC run 
 NPC_MSBD.py --depth 0 --time_step 6000 --temperature 298.15 --pikle_file_name "test" --rmf_filename "test.rmf" --num_frames 60000
-#depth is the recursion depth time_step  is the basic time step num_frames is the measure of the simulation time in the case of 60000 and dt =6000 fs this means 23 microseconds 
-
+depth: Represents the recursion depth of the algorithm.
+time_step: Defines the fundamental time step for the simulation.
+num_frames: Specifies the total number of frames, which determines the total simulation time.
+For example, if num_frames = 60,000 and time_step = 6,000 fs, the simulation spans 23 microseconds.
 # Example parameters for 5 or 10 balls run 
 - change the surrogate force function (can also use the same as the NPC)
 -  go to the main of the python file and give the parameters e.g n=3, dt=0.2 file_name ="TEST" time_in_fs_sedc = 20000000
