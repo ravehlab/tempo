@@ -15,9 +15,9 @@ import numpy as np
 
 T = 298.15 # Kalvin
 k = 1.5 * 298.15 
-# time_in_p_sedc= 450000
-time_in_p_sedc = 1800000*10/18*10*2
-# time_in_p_sedc = 1
+# time_in_fs_sedc= 450000
+time_in_fs_sedc = 1800000*10/18*10*2
+# time_in_fs_sedc = 1
 
 
 
@@ -246,7 +246,7 @@ if __name__ == '__main__':
                 # n=5
                 print("n=",n,"dt=",dt)
                 # print(n, dt)
-                your_data_n0 = test_bonded(dt=dt, num_of_steps=int(time_in_p_sedc * (1 / dt) / 4 ** n),
+                your_data_n0 = test_bonded(dt=dt, num_of_steps=int(time_in_fs_sedc * (1 / dt) / 4 ** n),
                                            n=n)
                 file_name =  "run_num_" + str(i + 1) + "long_10_bolls" + str(
                     your_data_n0[1]) + '_fix)test_4_' + str(dt) + '_mean_with_fix_n=_' + str(n) + '.pickle'
